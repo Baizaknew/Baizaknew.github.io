@@ -1,0 +1,121 @@
+a{
+  text-decoration: none;
+}
+
+body{
+  background-image: url('https://top-fon.com/uploads/posts/2021-07/1626879197_22-p-krasnii-fon-windows-10-24.jpg');
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: auto 0;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+gg{
+display: flex;
+left:2px;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 56px;
+    border-radius: 3px;
+    border: 2px solid;
+    font: 16px 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    box-shadow: 0px 0px 10px 3px rgba(199, 199, 199, 0.31), -1px 2px 13px 7px rgba(0, 0, 0, 0);
+  }
+  
+  /* osnova-karkasa-1 */
+  .osnova-karkasa-1 {
+    color: #ffffff;
+    border-color: #b5b5dc;;
+    background: -webkit-linear-gradient(left, #6565ce, #4cdeff) no-repeat;
+    background: linear-gradient(to right, #7b70f4, #25f4df) no-repeat;
+    background-size: 0% 100%;
+  }
+  .osnova-karkasa-1:hover {
+    background-size: 100% 100%;
+    color: #ffffff;
+  }
+  
+
+  /* Блок картинки */
+.rotate-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Изображение */
+.change-img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+}
+.change-img:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+.change-img:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+/* Стороны изображения */
+.front-side-img, .back-side-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  back-side-imgface-visibility: hidden;
+ }
+.front-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);/* Отражаем изображение по горизонтали */
+}
+.back-side-img {
+  transform: rotateY(180deg);
+}
